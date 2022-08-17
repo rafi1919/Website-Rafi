@@ -96,9 +96,16 @@ h1 span{
     animation: spin 5s ease-out infinite;
   }
   @keyframes spin {
-    0% { content:"Tjahaja Asia"; }
-    50% { content:"Pelindoeng Asia"; }
-    100% { content: "Pemimpin Asia"; }
+   0% {
+      content: "Tjahaja Asia";
+    }
+    50% {
+      content: "Pelindoeng Asia";
+    }
+    100% {
+      content: "Pemimpin Asia";
+    }    
+  }
   }
 
 #banner .time{
