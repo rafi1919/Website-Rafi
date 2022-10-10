@@ -3,12 +3,14 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Japindo Fest</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+
     <!-- css -->
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 
-
+    <script src='main.js'></script>
 </head>
 <body>
     <div class="header">
@@ -21,16 +23,25 @@
       </div>
       
     <div id='register'>
-        <form>
+        <form class="reg">
             <label for="name">Nama:</label><br>
-            <input type="text" id="name" name="name" value=""><br>
+            <input type="text" id="name" name="name" value="" class="input"><br>
             <label for="usia">Usia:</label><br>
-            <input type="text" id="name" name="usia" value="">
+            <input type="text" id="usia" name="usia" value="" class="input">
             <p>devisi</p>
+            <div class="btn-group">
             <input type="radio" id="PETA">
-            <label for="PETA">PETA</label>
-            <input type="radio" id="Romusha">
-            <label for="Romusha">Romusha</label>
+            <label for="PETA">PETA</label><br/>
+            <input type="radio" id="Seinendan">
+            <label for="Seinendan">Seinendan</label><br/>
+            <input type="radio" id="Keibodan">
+            <label for="Keibodan">Keibodan</label><br/>
+            <input type="radio" id="Fujinkai">
+            <label for="Fujinkai">Fujinkai</label><br/>
+            <input type="radio" id="Heiho">
+            <label for="Heiho">Heiho</label><br/>
+            </div>
+            <button type="sumbit">Grab a Ticket !</button>
           </form>
     </div>
     

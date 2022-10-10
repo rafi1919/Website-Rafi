@@ -96,7 +96,8 @@ h1 span{
     animation: spin 5s ease-out infinite;
   }
   @keyframes spin {
-   0% {
+
+    0% {
       content: "Tjahaja Asia";
     }
     50% {
@@ -106,7 +107,6 @@ h1 span{
       content: "Pemimpin Asia";
     }    
   }
-
 
 #banner .time{
     margin-top: 75px;
@@ -253,7 +253,7 @@ ul li ul {
   }
 
   .event{
-    height: 80vh;
+    height: 70vh;
     margin-top: 50px;
     background: var(--third);
   }
@@ -261,7 +261,7 @@ ul li ul {
   .listevent{
     margin: 50px;
     width: 600px;
-    height: 400px;
+    height: 250px;
     background: var(--secondary);
     box-shadow: 15px 14px 0px -5px rgba(0,0,0,1);
     -webkit-box-shadow: 15px 14px 0px -5px rgba(0,0,0,1);
@@ -270,7 +270,7 @@ ul li ul {
 
   .benefit{
     padding: 50px;
-    height: 70vh;
+    height: 60vh;
     background: var(--primary);
     justify-content: center;
   }
@@ -278,7 +278,7 @@ ul li ul {
   .listbenefit{
     margin: auto;
     width: 600px;
-    height: 400px;
+    height: 300px;
     background: var(--secondary);
     box-shadow: 15px 14px 0px -5px rgba(0,0,0,1);
     -webkit-box-shadow: 15px 14px 0px -5px rgba(0,0,0,1);
@@ -289,6 +289,60 @@ ul li ul {
     font-size: 1.2rem;
     padding: 5px;
   }
+
+  #register{
+    text-align: center;
+  }
+
+  #register .reg{
+    margin: auto;
+    width: 30rem;
+    height: auto;
+    padding: 40px;
+    border: 2px solid;
+    background: var(--secondary);
+    box-shadow: 15px 14px 0px -5px rgba(0,0,0,1);
+    -webkit-box-shadow: 15px 14px 0px -5px rgba(0,0,0,1);
+    -moz-box-shadow: 15px 14px 0px -5px rgba(0,0,0,1);
+  }
+
+  #register .reg label{
+    font-size: 1.5rem
+  }
+
+  #register .reg .input{
+    margin: 20px;
+    padding: 10px;
+    width: 20rem;
+  }
+
+  #register .reg .btn-group{
+    padding: 20px;
+    text-align: left;
+    display: grid;
+  }
+
+  #register .reg button{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 20px;
+    color: var(--secondary);
+    background: var(--primary);
+
+    box-shadow: 15px 14px 0px -5px rgba(0,0,0,1);
+    -webkit-box-shadow: 15px 14px 0px -5px rgba(0,0,0,1);
+    -moz-box-shadow: 15px 14px 0px -5px rgba(0,0,0,1);
+  }
+
+  #register .reg button:hover{
+    color: var(--third);
+    background: var(--secondary);
+
+    box-shadow: 15px 14px 0px -5px rgba(227, 48, 69, 1);
+    -webkit-box-shadow: 15px 14px 0px -5px rgba(227, 48, 69, 1);
+    -moz-box-shadow: 15px 14px 0px -5px rgba(227, 48, 69, 1);
+  }
+
 
 @media screen and (max-width: 600px) {
 
@@ -303,6 +357,17 @@ ul li ul {
     float: none;
   }
 
+  #banner .title h2{
+    padding: 10px;
+    font-size: 5rem;
+  }
+
+  #banner .title h1{
+      font-size: 4.5rem;
+  }
+  #banner .time{
+    height: auto;
+  }
 
   .timeline::after {
     left: 31px;
@@ -338,6 +403,8 @@ ul li ul {
     left: 0%;
     }
 
+    /* event */
+
     .listevent{
         margin: 20px;
         width: 200px;
@@ -346,10 +413,37 @@ ul li ul {
      
      .benefit{
        margin: 0;
+       height: auto;
      }
      .listbenefit{
       margin: 0;
       width: 200px;
       height: auto;
    } 
+
+   /* register */
+
+   #register .reg{
+     position: relative;
+    margin: auto;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    }
+
+  #register .reg label{
+    font-size: 1.3rem
+  }
+
+  #register .reg .input{
+    margin: 15px;
+    padding: 10px;
+    width: 15rem;
+  }
+
+  #register .reg .btn-group{
+    padding: 8px;
+    text-align: left;
+    display: inline-flexbox;
+  }
 }
